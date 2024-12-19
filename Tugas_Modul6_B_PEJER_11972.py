@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 
 # Tentukan path model (model ada di folder root proyek)
-MODEL_PATH = "model_VGG-16.h5"
+MODEL_PATH = "best_model.h5"
 CLASS_NAMES = ['Fuji Apple', 'Golden Delicious Apple', 'Granny Smith Apple']
 
 # Fungsi untuk memuat model dengan validasi tambahan
