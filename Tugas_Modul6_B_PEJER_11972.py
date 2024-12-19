@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 
 # Tentukan path model (model ada di folder root proyek)
-model_path = "best_model.h5"
+model_path = "model_VGG-16.h5"
 
 # Pastikan model ada di dalam folder root
 if not os.path.exists(model_path):
@@ -14,7 +14,7 @@ if not os.path.exists(model_path):
 else:
     # Load model
     model = load_model(model_path)
-    class_name = ['merah', 'hijau', 'kuning']
+    class_name = ['Fuji Apple', 'Golden Delicious Apple', 'Granny Smith Apple']
 
     # Fungsi untuk mengklasifikasi gambar
     def classify_image(image_path):
